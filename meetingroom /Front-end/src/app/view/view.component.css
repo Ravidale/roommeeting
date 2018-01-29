@@ -1,0 +1,16 @@
+textarea {
+    resize: none;
+    width: 100%;
+ }
+
+ .button {
+    color:black;
+    background-color: #FFF056
+
+}
+.available{
+    color: white;
+    background-color: #005A31
+
+
+}

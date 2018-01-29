@@ -1,0 +1,12 @@
+textarea {
+    resize: none;
+    width: 100%;
+ }
+
+ .button {
+    color:white;
+    display: block;
+    width: 100%;
+    background-color: #C63D0F
+
+}

@@ -1,0 +1,55 @@
+
+  <!-- MODAL -->
+
+  <form #f="ngForm" (ngSubmit)="update(f, produk._id)" class="form-horizontal" >
+
+      <!-- MODAL CONTENT -->
+      
+                  <div id = "background">
+                      <a [routerLink]="['/view']">
+                        <button type = "button" class = "glyphicon glyphicon-chevron-left" ></button>
+                      </a>
+                      <div class="col-md-offset-3 col-sm-7" >
+                    
+                        
+                            <div class="panel panel-default" id ="background">
+                         
+                              <div class="panel-body">
+                                  <h3>
+                                      CURRENT PICTURE
+                                  </h3>
+                                  <img src="{{produk.picture}}" alt="Norway" style="max-height: 300px;width:100%" class="w3-hover-opacity"><br><br>
+                                  <input type="hidden" class="form-control" name="name" [(ngModel)] = "produk.name" >
+                                  <input type="hidden" class="form-control" name="location" [(ngModel)] = "produk.location" >
+                                  <input type="hidden" class="form-control" name="price" [(ngModel)] = "produk.price" >
+                                  <input type="hidden" class="form-control" name="status"  [(ngModel)] = "produk.status" >
+                                  <input type="hidden" class="form-control" name="description" [(ngModel)] = "produk.description" >
+                                  <input type="hidden" class="form-control" name="picture" [(ngModel)] = "produk.picture" >
+                                  <input type="hidden" class="form-control" name="telephone" [(ngModel)] = "produk.telephone" >
+                                  <input type="hidden" class="form-control" name="email" [(ngModel)] = "produk.email" >
+                    
+                    
+                                <div class="form-group">
+                                  <div class="col-xs-12">
+                                 
+                                    <input type="file" name = "" id = "" (change)="fileChange($event)">
+                                    <br><br>
+                                    <button type="submit" class="btn btn-primary button">Update</button>
+                    <!-- <a class = "glyphicon glyphicon-chevron-left"> </a> -->
+                   
+                                  </div>
+                                </div>
+                                
+                        
+                              </div>
+                            </div>      
+                        </div>  
+                    </div>
+              
+          <!-- MODAL CONTENT -->
+                
+  
+        </form>
+      
+      <!-- MODAL   -->
+    
